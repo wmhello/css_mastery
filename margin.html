@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      table{
+          border: 1px solid #ccc;
+          border-spacing: 0;
+          border-collapse: collapse;
+          border-radius: 5px;
+      }
+      td, th{
+          border: 1px solid #ccc;
+      }
+
+      .table-radius {
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          border-spacing: 0;
+          border-collapse: separate;
+          overflow: hidden;
+      }
+      .table-radius th, 
+      .table-radius td{
+          border-bottom: 1px solid #f00;
+          border-right: 1px solid #f00;
+      }
+      .table-radius th:last-child,
+      .table-radius td:last-child{
+          border-right: 0;
+      }
+
+      .table-radius tr:last-child td{
+          border-bottom: 0;
+      }
+    
+    </style>
+</head>
+<body>
+    <table class="table-radius">
+        <thead>
+            <tr>
+                <th>1月</th>
+                <th>2月</th>
+                <th>3月</th>
+                <th>4月</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>31天</td>
+                <td>28天</td>
+                <td>31天</td>
+                <td>30天</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
